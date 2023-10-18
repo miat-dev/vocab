@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+.title{
+    font-family: 'Merriweather', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.allItem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.8em;
+}
+
+.item {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 0 3px #3333334f;
+}
+.item h3 {
+    font-size: 18px;
+    margin-top: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.seperator {
+    margin-bottom: 30px;
+    width: 35px;
+    height: 3px;
+    background: #777;
+    border: none;
+}
+
+.item .item_in {
+    background: #ffffff;
+    padding: 1em;
+    /* position: relative; */
+}
+
+.item .item_in::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 0%;
+    background: #333333;
+    right: 0px;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
+.item .item_in:hover:before {
+    width: 100%;
+}
+
+
+
+
